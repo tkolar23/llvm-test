@@ -1,0 +1,18 @@
+; ModuleID = './cFiles/return_simple.c'
+source_filename = "./cFiles/return_simple.c"
+target datalayout = "e-m:e-p:32:32-i64:64-n32-S128"
+target triple = "thru"
+
+; Function Attrs: nounwind
+define dso_local i32 @return_simple() #0 {
+  ret i32 0
+}
+
+attributes #0 = { nounwind "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" }
+
+!llvm.module.flags = !{!0, !1}
+!llvm.ident = !{!2}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{i32 7, !"frame-pointer", i32 2}
+!2 = !{!"clang version 14.0.0"}
